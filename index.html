@@ -3,13 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>Random Name Generator</title>
 </head>
 <body>
-    <div>
-        <h1>Random Name Generator</h1>
+    <h1>Random Name Generator</h1>
+    
+    
+    <input type="text" id="nameInput" class="nameField" placeholder="e.g. John...">
+    
+    
+    <input type="text" id="groupSizeSelect" placeholder="e.g. 1, 2, 3..."></input>
+    <button id="generateGroups"></button>
+    
+
+    <div id="namesListContainer"></div>
+
+    <div id="groupModal" class="modal">
+        <div class="modal-content">
+            <span class="closeModal">&times;</span>
+            <h2>Generated Groups</h2>
+            <ul id="groupList"></ul>
+        </div>
     </div>
 
-    
+    <script type="module" src="./scripts/app.js"></script>
 </body>
 </html>
